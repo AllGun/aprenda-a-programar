@@ -1,5 +1,5 @@
-# aprenda-a-programar
-Repositório do Aprenda a programar da ITuring
+# Aprenda a programar iTuring
+Repositório do Aprenda a programar da iTuring
 
 # Sobre o projeto
 
