@@ -3,10 +3,10 @@ Repositório do Aprenda a programar da iTuring
 
 # Sobre o projeto
 
-Projeto feito na Semana Aprendar a programar da iTuring que respoonda a grande questão da vida: Programar é pra mim, é pra você, é para todos?
+Projeto feito na Semana Aprenda a programar da iTuring que responde a grande questão da vida: Programar é pra mim, é pra você, é para todos?
 
 ## Instrutores
-- Thales Carvalho - Head of Product  & Engineering no ITuring
+- Thales Carvalho - Head of Product  & Engineering na ITuring
 - Jô Corrêa
 - Tiago Sestari
 
