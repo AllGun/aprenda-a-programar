@@ -1,5 +1,7 @@
-const name = "Alfredo Gutemberg";
+const clientName = "Alfredo Gutemberg";
 const email ="alfredo.gutemberg@gmail.com";
-const profissao = "Programador";
-const idade = 36;
-const umLugarParaConhecer = "Shenzhen - China";
+const occupation = "Programador Java";
+const clientAge = 36;
+const placeToVisit = "Shenzhen - China";
+
+console.log(`Olá, ${clientName}`)
