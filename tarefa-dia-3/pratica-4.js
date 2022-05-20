@@ -4,12 +4,14 @@ let produtoC = {"nome": "sandália", "valor": 120.00, "internacional": false};
 
 
 if(produtoA.internacional) {
+    console.log(`Produto: ${produtoA.nome}`);
     let imposto = produtoA.valor * 0.2;
     console.log(`Imposto: R$${imposto}`);
     let precoTotal = produtoA.valor + imposto;
     console.log(`Preço total: R$${precoTotal}`);
     console.log();
 } else {
+    console.log(`Produto: ${produtoA.nome}`);
     let imposto = produtoA.valor * 0.15;
     console.log(`Imposto: R$${imposto}`);
     let precoTotal = produtoA.valor + imposto;
@@ -19,13 +21,15 @@ if(produtoA.internacional) {
 
 
 if(produtoB.internacional) {
+    console.log(`Produto: ${produtoB.nome}`);
     let imposto = produtoB.valor * 0.2;
     console.log(`Imposto: R$${imposto}`);
     let precoTotal = produtoB.valor + imposto;
     console.log(`Preço total: R$${precoTotal}`);
     console.log();
 } else {
-    let imposto = produtoA.valor * 0.15;
+    console.log(`Produto: ${produtoB.nome}`);
+    let imposto = produtoB.valor * 0.15;
     console.log(`Imposto: R$${imposto}`);
     let precoTotal = produtoC.valor + imposto;
     console.log(`Preço total: R$${precoTotal}`);
@@ -34,12 +38,14 @@ if(produtoB.internacional) {
 
 
 if(produtoC.internacional) {
-    let imposto = produtoA.valor * 0.2;
+    console.log(`Produto: ${produtoC.nome}`);
+    let imposto = produtoC.valor * 0.2;
     console.log(`Imposto: R$${imposto}`);
     let precoTotal = produtoC.valor + imposto;
     console.log(`Preço total: R$${precoTotal}`);
 } else {
-    let imposto = produtoA.valor * 0.15;
+    console.log(`Produto: ${produtoC.nome}`);
+    let imposto = produtoC.valor * 0.15;
     console.log(`Imposto: R$${imposto}`);
     let precoTotal = produtoC.valor + imposto;
     console.log(`Preço total: R$${precoTotal}`);
