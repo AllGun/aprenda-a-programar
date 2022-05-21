@@ -17,8 +17,9 @@ In progress...
 
 
 # Tecnologias utilizadas
-## Front end
-- HTML / CSS
+- Git
+- Github
+- Javascript
 
 # Autor
 
