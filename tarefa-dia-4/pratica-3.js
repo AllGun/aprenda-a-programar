@@ -101,29 +101,32 @@ let receita = [
   { valor: 809, gorjeta: 80.9 },
 ];
 
-//Problema 1: Qual o valor total de vendas sem gorjeta?
-let totalValor = 0,
-  totalGorjeta = 0;
+// Essa parte do código vai me fornecer os dados para os Promemas de 1 a 3 
+let saleSum = 0,
+  tipSum = 0,
+  saleBelow = 0, markBelowTarget = 50;
 
 for (let item of receita) {
-  totalValor = totalValor + item.valor;
-  totalGorjeta = totalGorjeta + item.gorjeta;
+  saleSum = saleSum + item.valor;
+  tipSum = tipSum + item.gorjeta;
 
-  //   console.log(item.valor);
+  if (item.valor < 50) {
+
+    saleBelow = saleBelow + item.valor;
+
+    console.log(item.valor);
+
+  }
 }
 
-console.log(`Total: R$ ${totalValor}`);
-console.log(`Total gorjeta: R$ ${totalGorjeta}`);
+//Problema 1: Qual o valor total de vendas sem gorjeta?
+console.log(`Total venda: R$ ${saleSum}`);
+console.log(`Total gorjeta: R$ ${tipSum}`);
 
 //Problema 2: Qual o valor total de vendas incluindo a gorjeta?
-//COLOQUE SUA SOLUÇÃO AQUI
+let salePlusTip = saleSum + tipSum;
+console.log(`Total (venda + gorjeta): R$ ${salePlusTip}`);
 
 //Problema 3: Quantas vendas foram abaixo de 50 reais?
-//COLOQUE SUA SOLUÇÃO AQUI
+console.log(`Venda abaixo de R$ ${markBelowTarget}: R$ ${saleBelow}`);
 
-// if (receita.gorjeta <= 0) {
-//     let semGorja = receita.valor;
-//     let soma = semGorja + semGorja;
-// } else {
-//     console.log("Tem gorja!");
-// }
