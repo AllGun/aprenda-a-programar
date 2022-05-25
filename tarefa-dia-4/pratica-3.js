@@ -101,21 +101,21 @@ let receita = [
   { valor: 809, gorjeta: 80.9 },
 ];
 
-// Essa parte do código vai me fornecer os dados para os Promemas de 1 a 3 
+// Essa parte do código vai me fornecer os dados para os Promemas de 1 a 3
 let saleSum = 0,
   tipSum = 0,
-  saleBelow = 0, markBelowTarget = 50;
+  saleBelow = 0,
+  markBelowTarget = 50,
+  saleBelowCount = 0;
 
 for (let item of receita) {
   saleSum = saleSum + item.valor;
   tipSum = tipSum + item.gorjeta;
 
   if (item.valor < 50) {
-
     saleBelow = saleBelow + item.valor;
-
-    console.log(item.valor);
-
+    saleBelowCount ++;
+    
   }
 }
 
@@ -128,5 +128,5 @@ let salePlusTip = saleSum + tipSum;
 console.log(`Total (venda + gorjeta): R$ ${salePlusTip}`);
 
 //Problema 3: Quantas vendas foram abaixo de 50 reais?
-console.log(`Venda abaixo de R$ ${markBelowTarget}: R$ ${saleBelow}`);
-
+console.log(`Total das vendas abaixo de R$ ${markBelowTarget}: R$ ${saleBelow}`);
+console.log(`Qtd de vendas abaixo de 50: ${saleBelowCount} `);
